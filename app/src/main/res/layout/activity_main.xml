@@ -5,14 +5,30 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity" >
-    <Spinner
-        android:id = "@+id/suit_spinner"
+    tools:context=".activities.MainActivity">
+
+    <FrameLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:spinnerMode="dropdown"/>
-    <EditText
-        android:id="@+id/text_box"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"/>
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <Spinner
+            android:id="@+id/suit_spinner"
+            android:layout_width="195dp"
+            android:layout_height="100dp"
+            android:spinnerMode="dropdown" />
+        <Button
+            android:id="@+id/go_to_numpad"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            />
+    </FrameLayout>
+
 </androidx.constraintlayout.widget.ConstraintLayout>
