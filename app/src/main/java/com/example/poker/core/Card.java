@@ -1,5 +1,5 @@
 package com.example.poker.core;
-import com.example.poker.core.Types.Suit;
+import com.example.poker.core.Utils.Suit;
 public class Card {
     private Suit suit;
 
