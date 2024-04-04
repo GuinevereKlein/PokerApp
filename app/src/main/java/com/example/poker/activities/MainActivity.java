@@ -31,7 +31,7 @@ public class MainActivity extends AppCompatActivity {
             return insets;
         });
         Intent myIntent  = new Intent(MainActivity.this, RankNumPad.class);
-        String[] suit_list = new String[]{"DIAMONDS","HEARTS","SPADES","CLUBS"};
+        String[] suit_list = new String[]{Character.toString((char)9830),Character.toString((char)9829),Character.toString((char)9824),Character.toString((char)9827)};
         Spinner suit_dropdown = findViewById(R.id.suit_spinner);
         ArrayAdapter<String> suit_adapter =new ArrayAdapter<>(this, android.R.layout.simple_spinner_dropdown_item,suit_list);
         suit_dropdown.setAdapter(suit_adapter);

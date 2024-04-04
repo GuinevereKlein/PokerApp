@@ -19,16 +19,24 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
 
-        <Spinner
-            android:id="@+id/suit_spinner"
-            android:layout_width="195dp"
-            android:layout_height="100dp"
-            android:spinnerMode="dropdown" />
-        <Button
-            android:id="@+id/go_to_numpad"
+        <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            />
+            android:orientation="vertical">
+
+            <Spinner
+                android:id="@+id/suit_spinner"
+                android:layout_width="195dp"
+                android:layout_height="100dp"
+                android:spinnerMode="dropdown" />
+
+            <Button
+                android:id="@+id/go_to_numpad"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:text="go" />
+        </LinearLayout>
+
     </FrameLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
